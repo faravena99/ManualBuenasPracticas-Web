@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class BuenasPracticasComponent implements OnInit {
-
-  constructor() { }
+  titulo:string;
+  constructor() { 
+    this.titulo = " Buenas Prácticas";
+  }
 
   ngOnInit(): void {
   }
