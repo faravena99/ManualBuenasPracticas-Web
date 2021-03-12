@@ -16,6 +16,11 @@ export class MenuService {
       descripcion: "Aquí veremos las buenas prácticas",
       img:"assets/img/buenasPracticas.png",
       ruta: ['/buenasPracticas']
+    },
+    {
+      descripcion: "Proyecto de ejemplo para consumir data desde un servicio",
+      img:"assets/img/heroes.png",
+      ruta: ['/heroes']
     }
   ];
 
