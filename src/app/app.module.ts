@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 //PIPES
 import { DomseguroPipe } from './pipes/domseguro.pipe';
 import { ProyectoHeroesComponent } from './components/proyecto-heroes/proyecto-heroes.component';
+import { PipeProyectComponent } from './components/pipe-proyect/pipe-proyect.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProyectoHeroesComponent } from './components/proyecto-heroes/proyecto-h
     InstalacionComponent,
     BuenasPracticasComponent,
     DomseguroPipe,
-    ProyectoHeroesComponent
+    ProyectoHeroesComponent,
+    PipeProyectComponent
     
   ],
   imports: [

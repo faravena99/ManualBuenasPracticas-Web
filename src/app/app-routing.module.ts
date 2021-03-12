@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
 import { HomeComponent } from './components/home/home.component';
 import { InstalacionComponent } from './components/instalacion/instalacion.component';
+import { PipeProyectComponent } from './components/pipe-proyect/pipe-proyect.component';
 import { ProyectoHeroesComponent } from './components/proyecto-heroes/proyecto-heroes.component';
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path:'instalacion', component: InstalacionComponent},
   {path:'buenasPracticas', component: BuenasPracticasComponent},
   {path:'heroes', component: ProyectoHeroesComponent},
+  {path:'pipes', component: PipeProyectComponent},
   {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'**', redirectTo:'home', pathMatch:'full' }
 ];

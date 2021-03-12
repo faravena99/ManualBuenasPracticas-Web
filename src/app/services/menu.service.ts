@@ -21,6 +21,11 @@ export class MenuService {
       descripcion: "Proyecto de ejemplo para consumir data desde un servicio",
       img:"assets/img/heroes.png",
       ruta: ['/heroes']
+    },
+    {
+      descripcion: "Demostración de los angular-pipes con sus inputs y outputs",
+      img:"assets/img/pipes.png",
+      ruta: ['/pipes']
     }
   ];
 
