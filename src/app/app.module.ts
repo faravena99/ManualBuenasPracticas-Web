@@ -9,6 +9,7 @@ import { HomeComponent } from './components/home/home.component';
 import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 import { InstalacionComponent } from './components/instalacion/instalacion.component';
 import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-p
     HomeComponent,
     TarjetasComponent,
     InstalacionComponent,
-    BuenasPracticasComponent
+    BuenasPracticasComponent,
+    DomseguroPipe
     
   ],
   imports: [

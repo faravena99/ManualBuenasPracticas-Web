@@ -8,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InstalacionComponent implements OnInit {
   titulo: string;
+  nodeUrl: string = 'https://nodejs.org/download/release/v10.8.0/';
+  tsUrl: string = 'https://www.typescriptlang.org/#installation'
+  angularUrl: string = 'https://cli.angular.io/'
+
+
 
   constructor() {
     this.titulo = "Manual de instalación de Angular"
