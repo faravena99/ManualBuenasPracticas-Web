@@ -10,14 +10,16 @@ import { HomeComponent } from './components/home/home.component';
 import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 import { InstalacionComponent } from './components/instalacion/instalacion.component';
 import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
+import { ProyectoHeroesComponent } from './components/proyecto-heroes/proyecto-heroes.component';
+import { PipeProyectComponent } from './components/pipe-proyect/pipe-proyect.component';
 
 //RUTAS
 import { AppRoutingModule } from './app-routing.module';
 
 //PIPES
 import { DomseguroPipe } from './pipes/domseguro.pipe';
-import { ProyectoHeroesComponent } from './components/proyecto-heroes/proyecto-heroes.component';
-import { PipeProyectComponent } from './components/pipe-proyect/pipe-proyect.component';
+import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
+import { ContrasenaPipe } from './pipes/contrasena.pipe';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { PipeProyectComponent } from './components/pipe-proyect/pipe-proyect.com
     BuenasPracticasComponent,
     DomseguroPipe,
     ProyectoHeroesComponent,
-    PipeProyectComponent
+    PipeProyectComponent,
+    CapitalizadoPipe,
+    ContrasenaPipe
     
   ],
   imports: [

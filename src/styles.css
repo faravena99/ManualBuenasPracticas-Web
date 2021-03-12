@@ -19,3 +19,10 @@ body {
 hr {
     color: whitesmoke;
 }
+
+th,
+tr,
+thead,
+tbody {
+    color: white
+}
