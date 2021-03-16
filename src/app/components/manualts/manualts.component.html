@@ -1,0 +1,109 @@
+<div class="container">
+    <h2>
+        <strong>TypeScript</strong>
+    </h2>
+</div>
+
+<div class="container m-3">
+    <h4>
+        Declaración de variables
+    </h4>
+    <p>
+        Existen varios tipos de variables y TypeScript nos deja declarar de varias formas:
+    </p>
+
+    <li>
+        let: Esta anotación nos sirve para declarar cualquier tipo de variable, tal y como lo vemos en la imagen, también podemos definir los tipos de datos y asignarles un valor adecuándolo al tipo de variable.
+    </li>
+
+    <div class="m-3 ">
+        <img src="assets/img-bp/let1.png" alt="notFound">
+        <img src="assets/img-bp/let2.png" alt="notFound">
+    </div>
+    <p>
+        También se puede declarar variables del tipo any la cual recibe cualquier valor que nosotros le asignamos, este tipo de variables es bueno usarlo al no saber qué tipo de dato recibirá nuestra función, pero siempre será una buena práctica definir nuestras
+        variables una vez ya sepamos cual es el tipo de dato que esta recibiendo.
+    </p>
+    <div class="m-3 ">
+        <img src="assets/img-bp/let3.png" alt="notFound">
+    </div>
+    <p>
+        También existen las variables de tipo const, estas se caracterizan por que su valor es estático y este nunca cambiara dentro del contexto en el cual se le esté declarando, es una buena práctica al nombrarlas hacerlos con MAYUSCÚLAS ya que esto nos indica
+        que es una variable estática.
+    </p>
+    <div class="m-3 ">
+        <img src="assets/img-bp/let4.png" alt="notFound">
+    </div>
+
+
+    <h4>Templates literales</h4>
+    <p>
+        Con TypeScript podemos reemplazar nuestra forma de mostrar nuestros resultados. Para esto se implementó (` `) = ALT + 96 como una de las formas estándar y fáciles que dentro del framework podemos utilizar.
+    </p>
+
+
+    <li>
+        Caso:
+    </li>
+
+    <div class="m-3">
+        <img src="assets/img-bp/tl1.png" alt="notFound">
+    </div>
+    <p>
+        Como podemos observar gracias al backtic como template literal podemos adecuar nuestras salidas solamente llamando a nuestra variable. Sin la necesidad de utilizar el (+) como concatenación.
+    </p>
+
+    <h4>
+        Argumentos (obligatorios, opcionales, por defecto)
+    </h4>
+    <p>
+        Como bien sabemos una función trae consigo argumentos las cuales podemos definir dentro de ella, una buena practica es definir estas en el orden que vamos a visualizar.
+    </p>
+
+    <div class="m-3">
+        <img src="assets/img-bp/tl2.png" alt="notFound">
+    </div>
+
+    <p>
+        Primero van las obligatorias, luego las opcionales y al final las por defecto, esto hace mas entendible nuestra función y así cualquier desarrollador puede usarla con facilidad.
+    </p>
+
+    <h4>
+        Funciones de flecha
+    </h4>
+
+    <p>
+        Como bien sabemos gracias a que angular soporta ES5+ como estándar al generar nuestro proyecto. Podremos aprovechar esta ventaja y utilizar las funciones de flecha como buena práctica, sin embargo, como podemos visualizar esto no afecta en los resultados.
+    </p>
+
+    <li>
+        Función declarada normalmente
+    </li>
+    <div class="m-3">
+        <img src="assets/img-bp/ff1.png" alt="notFound">
+    </div>
+    <li>
+        Función declarada con =>
+    </li>
+    <div class="m-3">
+        <img src="assets/img-bp/ff2.png" alt="notFound">
+    </div>
+
+    <p>
+        Como dato si esta función no utiliza mas de una línea de código esta no es necesario que incluya las llaves. Además lo bueno que tienen estas funciones es que se adecuan al scope en el cual estas se definieron, por lo que podemos llamar a las variables
+        dentro del contexto sin volver a definirlas a diferencia de las funciones normales.
+
+    </p>
+    <strong>
+        Arrow Function
+    </strong>
+    <div class="m-3">
+        <img src="assets/img-bp/ff3.png" alt="notFound">
+    </div>
+    <strong>
+        Normal Function
+    </strong>
+    <div class="m-3">
+        <img src="assets/img-bp/ff4.png" alt="notFound">
+    </div>
+</div>

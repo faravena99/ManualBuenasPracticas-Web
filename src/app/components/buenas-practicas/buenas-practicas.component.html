@@ -4,106 +4,254 @@
     </h1>
 </div>
 
+<div class="container m-3">
+    <h2><strong>Mantenerse al día</strong></h2>
+</div>
+
 <div class="container">
-    <h4>
-        Declaración de variables
-    </h4>
-    <p>
-        Existen varios tipos de variables y TypeScript nos deja declarar de varias formas:
-    </p>
-
-    <li>
-        let: Esta anotación nos sirve para declarar cualquier tipo de variable, tal y como lo vemos en la imagen, también podemos definir los tipos de datos y asignarles un valor adecuándolo al tipo de variable.
-    </li>
-
-    <div class="m-3 ">
-        <img src="assets/img-bp/let1.png" alt="notFound">
-        <img src="assets/img-bp/let2.png" alt="notFound">
-    </div>
-    <p>
-        También se puede declarar variables del tipo any la cual recibe cualquier valor que nosotros le asignamos, este tipo de variables es bueno usarlo al no saber qué tipo de dato recibirá nuestra función, pero siempre será una buena práctica definir nuestras
-        variables una vez ya sepamos cual es el tipo de dato que esta recibiendo.
-    </p>
-    <div class="m-3 ">
-        <img src="assets/img-bp/let3.png" alt="notFound">
-    </div>
-    <p>
-        También existen las variables de tipo const, estas se caracterizan por que su valor es estático y este nunca cambiara dentro del contexto en el cual se le esté declarando, es una buena práctica al nombrarlas hacerlos con MAYUSCÚLAS ya que esto nos indica
-        que es una variable estática.
-    </p>
-    <div class="m-3 ">
-        <img src="assets/img-bp/let4.png" alt="notFound">
-    </div>
-
-
-    <h4>Templates literales</h4>
-    <p>
-        Con TypeScript podemos reemplazar nuestra forma de mostrar nuestros resultados. Para esto se implementó (` `) = ALT + 96 como una de las formas estándar y fáciles que dentro del framework podemos utilizar.
-    </p>
-
-
-    <li>
-        Caso:
-    </li>
-
-    <div class="m-3">
-        <img src="assets/img-bp/tl1.png" alt="notFound">
-    </div>
-    <p>
-        Como podemos observar gracias al backtic como template literal podemos adecuar nuestras salidas solamente llamando a nuestra variable. Sin la necesidad de utilizar el (+) como concatenación.
-    </p>
-
-    <h4>
-        Argumentos (obligatorios, opcionales, por defecto)
-    </h4>
-    <p>
-        Como bien sabemos una función trae consigo argumentos las cuales podemos definir dentro de ella, una buena practica es definir estas en el orden que vamos a visualizar.
-    </p>
-
-    <div class="m-3">
-        <img src="assets/img-bp/tl2.png" alt="notFound">
-    </div>
-
-    <p>
-        Primero van las obligatorias, luego las opcionales y al final las por defecto, esto hace mas entendible nuestra función y así cualquier desarrollador puede usarla con facilidad.
-    </p>
-
-    <h4>
-        Funciones de flecha
+    <h4 class="m-4">
+        Mantener sus proyectos de Angular actualizados
     </h4>
 
     <p>
-        Como bien sabemos gracias a que angular soporta ES5+ como estándar al generar nuestro proyecto. Podremos aprovechar esta ventaja y utilizar las funciones de flecha como buena práctica, sin embargo, como podemos visualizar esto no afecta en los resultados.
+        Al igual que Web y todo el ecosistema web, Angular está mejorando continuamente. Angular equilibra la mejora continua con un fuerte enfoque en la estabilidad y facilita las actualizaciones. Mantener su aplicación Angular actualizada le permite aprovechar
+        las nuevas funciones de vanguardia, así como optimizaciones y correcciones de errores. Comprob
     </p>
 
-    <li>
-        Función declarada normalmente
-    </li>
-    <div class="m-3">
-        <img src="assets/img-bp/ff1.png" alt="notFound">
-    </div>
-    <li>
-        Función declarada con =>
-    </li>
-    <div class="m-3">
-        <img src="assets/img-bp/ff2.png" alt="notFound">
-    </div>
+    <h4 class="m-4">
+        Comprobar su versión de Angular <small> [ ng --version ]</small>
+    </h4>
+    <p>Para aquello a través de la consola, debe posicionarse a la carpeta del proyecto, luego colocal el commando mencionado</p>
+
+    <img src="assets/img/bp-2.png" alt="en desarrollo">
+
+    <h4 class="m-4">
+        Encontrar la versión actual de Angular
+    </h4>
 
     <p>
-        Como dato si esta función no utiliza mas de una línea de código esta no es necesario que incluya las llaves. Además lo bueno que tienen estas funciones es que se adecuan al scope en el cual estas se definieron, por lo que podemos llamar a las variables
-        dentro del contexto sin volver a definirlas a diferencia de las funciones normales.
-
+        puede encontrar la versión más actual de Angular usando el comando CLI ng update. De forma predeterminada, ng update(sin argumentos adicionales) enumera las actualizaciones que están disponibles para usted.
     </p>
-    <strong>
-        Arrow Function
+</div>
+
+<div class="container">
+    <h1><strong>Seguridad</strong></h1>
+
+    <h4 class="m-4">
+        Utilice el compilador de plantillas AOT
+    </h4>
+    <p>
+        El compilador de plantillas AOT evita toda una clase de vulnerabilidades llamadas inyección de plantillas y mejora en gran medida el rendimiento de la aplicación. El compilador de plantillas AOT es el compilador predeterminado utilizado por las aplicaciones
+        CLI de Angular, y debe usarlo en todas las implementaciones de producción.
+    </p>
+
+    <h4 class="m-4">
+        Protección XSS del lado del servidor
+    </h4>
+
+    <p>
+        El HTML construido en el servidor es vulnerable a los ataques de inyección. Inyectar código de plantilla en una aplicación Angular es lo mismo que inyectar código ejecutable en la aplicación: le da al atacante control total sobre la aplicación. Para evitar
+        esto, utilice un lenguaje de plantillas que escape automáticamente los valores para evitar vulnerabilidades XSS en el servidor. No genere plantillas angulares en el lado del servidor utilizando un lenguaje de plantillas; Hacer esto conlleva un
+        alto riesgo de introducir vulnerabilidades de inyección de plantillas.
+    </p>
+
+    <h4>
+        Vulnerabilidades de nivel HTTP
+    </h4>
+
+    <p>
+        Angular tiene soporte integrado para ayudar a prevenir dos vulnerabilidades HTTP comunes, la falsificación de solicitudes entre sitios (CSRF o XSRF) y la inclusión de scripts entre sitios (XSSI). Ambos deben mitigarse principalmente en el lado del servidor,
+        pero Angular proporciona ayudantes para facilitar la integración en el lado del cliente.
+    </p>
+</div>
+
+<div class="container">
+    <h2>
+        <strong>
+            Conoce tu Arquitectura
+        </strong>
+    </h2>
+
+    <p>
+        No es posible trabajar con Angular sin tener una idea de la arquitectura de archivos que genera. Especialmente porque necesitamos replicar cierto comportamiento a la hora de crear nuestros componentes, servicios y demás. No da lo mismo dónde y cómo se
+        guarda cada cosa, para esto vamos a dividir la arquitectura de nuestro proyecto.
+    </p>
+
+    <ul>
+        <li>
+            Modulo Components:
+            <p>
+                Es aquella donde, donde generamos los componentes tales como, nav-bar y modal, etc.
+            </p>
+        </li>
+
+        <li>
+            Modulo Shared:
+        </li>
+        <p>
+            En está carpeta utilizaremos las directivas de nuestro proyecto, por ejemplo: <strong>“rut.validator.directive.ts”</strong>.
+        </p>
+
+        <li>
+            Modulo Models:
+        </li>
+        <p>
+            Aquí creamos todas los class o interface para nuestro proyecto
+        </p>
+        <li>
+            Modulo Pages:
+        </li>
+        <p>
+            Como dice el nombre, en está carpeta creamos las páginas, valga la redundancia, de nuestro proyecto.
+        </p>
+        <li>
+            Modulo Pipes:
+        </li>
+        <p>
+            En el módulo pipes, es dónde van las máscaras de nuestro proyecto, ya sean, el formato de una moneda, formato del rut, entre otras
+        </p>
+        <li>
+            Modulo Services:
+        </li>
+        <p>
+            En la carpeta services, es donde llamaremos a todas nuestras API´S
+        </p>
+    </ul>
+
+    <h5>
+        Estructura de carpetas que manejamos:
+    </h5>
+    <div class="img-centrado">
+        <img src="assets/img/bp-3.png" alt="desarrollo">
+    </div>
+
+</div>
+
+<div class="container m-4">
+    <h2>
+        <strong>
+            Guía de estilo de codificación de Angular 
+        </strong>
+    </h2>
+
+    <strong>Estilo 01-01</strong>
+    <ul>
+        <li>
+            Definir una cosa, como servicio o componente por archivo
+        </li>
+        <li>
+            Considerar limitar los archivos a 400 líneas de código
+        </li>
+        <li>
+            ¿por qué?  Un componente por archivo hace que sea mucho más fácil de leer, mantener y evitar colisiones con los equipos de control de código fuente.
+        </li>
+    </ul>
+    <p>
+        La clave es hacer que el código sea más reutilizable, más fácil de leer y menos propenso a errores.
+    </p>
+
+    <h4 class="m-4">
+        Pequeñas funciones
+    </h4>
+
+    <strong>Estilo 01-02</strong>
+    <ul>
+        <li>
+            Definir funciones pequeñas
+        </li>
+        <li>
+            Considere limitar a no más de 75 líneas
+        </li>
+        <li>
+            ¿por qué?  Las funciones pequeñas son más fáciles de probar, leer, mantener y reutilizar, especialmente cuando hacen una cosa y tienen un propósito.
+        </li>
+    </ul>
+
+    <h4 class="m-4">
+        Símbolos y nombres de archivos
+    </h4>
+    <strong>Estilo 01-03</strong>
+    <ul>
+        <li>
+            Utilizar nombres consistentes para todos los archivos con nombre de lo que representan
+        </li>
+        <li>
+            Haga coincidir del nombre del símbolo con el nombre del archivo
+        </li>
+        <li>
+            Añada el nombre de símbolo con el sufijo convencional (como Component, Directive, Module, Pipe, o Service) para una cosa de ese tipo.
+        </li>
+        <li>
+            Use el nombre de archivo del sufijo convencional como. component.ts, .directive.ts, .module.ts, .pipe.ts, o .service.ts) para un archivo de ese tipo.
+        </li>
+
+        <li>
+            ¿Por qué? Las convenciones coherentes facilitan la identificación rápida y la referencia de activos de diferentes tipos.
+        </li>
+
+    </ul>
+
+    <h5>
+        Por ejemplo:
+    </h5>
+    <img src="assets/img/bp-4.png" alt="">
+</div>
+
+<div class="container">
+    <h2>
+        <strong>
+        Organiza tu código
     </strong>
-    <div class="m-3">
-        <img src="assets/img-bp/ff3.png" alt="notFound">
-    </div>
-    <strong>
-        Normal Function
-    </strong>
-    <div class="m-3">
-        <img src="assets/img-bp/ff4.png" alt="notFound">
-    </div>
+    </h2>
+
+    <p>
+        Algunas formas de tener un archivo de código más legible y organizado son:
+    </p>
+
+    <ul>
+        <li>
+            Lo más importante debe ir arriba.
+        </li>
+        <li>
+            Primero prioridades, después métodos.
+        </li>
+        <li>
+            El nombre correcto: las propiedades y métodos deberían usar el sistema de camel case (ej: getUserByName), al contrario, las clases (componentes, servicios, etc) deben usar upper camel case (ej: UserComponent).
+        </li>
+        <li>
+            Los componentes y servicios deben tener su respectivo sufijo: UserComponent, UserService.
+        </li>
+        <li>
+            Imports: los archivos externos van primero.
+        </li>
+    </ul>
+
+    <h4>
+        Procura ser claro al momento de codificar
+    </h4>
+    <p>
+        Cuando estés escribiendo, piensa que probablemente alguien más tendrá que leer tu código en algún momento. Todos hemos sufrido a la hora de leer código ajeno. Es por eso, por lo que lo ideal, es pensar en la persona que lo leerá, o incluso en ti mismo.
+    </p>
+    <li>
+        Tus comentarios deber ser claros y concisos, que se logre entender de la manera más fácil posible.
+    </li>
+    <li>
+        Explica en tu mismo código, Código autodescriptivo, sin la necesidad de hacer comentarios para este.
+    </li>
+
+    <h4>
+        Otras buenas prácticas para tus Servicios
+    </h4>
+    <p>
+        Algunas buenas prácticas al momento de crear servicios son:
+    </p>
+    <li>
+        Crea tus servicios como inyectables
+    </li>
+    <li>
+        Utiliza tus servicios para recolectar tu data: es total responsabilidad de tus servicios recolectar la data necesaria, ya sea desde una API, localstorage o alguna estructura que hayamos creado nosotros mismos para poder desarrollarla.
+    </li>
+    <li>
+        Tus componentes nunca deben encargarse de pensar como traer data, estos solo deberían encargarse de llamar al servicio que contiene todo lo necesario, ¡¡ por esto, no deberías llamar a las API’s en tus componentes!!
+    </li>
 </div>

@@ -26,7 +26,13 @@ export class MenuService {
       descripcion: "Demostración de los angular-pipes con sus inputs y outputs",
       img:"assets/img/pipes.png",
       ruta: ['/pipes']
+    },
+    {
+      descripcion: "Manual de Typescript",
+      img:"assets/img/tsmanual.png",
+      ruta: ['/manualts']
     }
+
   ];
 
   constructor() { console.log("servicio listo")}

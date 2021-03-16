@@ -20,6 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DomseguroPipe } from './pipes/domseguro.pipe';
 import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
 import { ContrasenaPipe } from './pipes/contrasena.pipe';
+import { ManualtsComponent } from './components/manualts/manualts.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ContrasenaPipe } from './pipes/contrasena.pipe';
     ProyectoHeroesComponent,
     PipeProyectComponent,
     CapitalizadoPipe,
-    ContrasenaPipe
+    ContrasenaPipe,
+    ManualtsComponent
     
   ],
   imports: [
