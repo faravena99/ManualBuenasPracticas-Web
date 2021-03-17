@@ -21,6 +21,7 @@ import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
 import { ContrasenaPipe } from './pipes/contrasena.pipe';
 import { ManualtsComponent } from './components/manualts/manualts.component';
 import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/shared/header/header.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { HomeComponent } from './components/home/home.component';
     CapitalizadoPipe,
     ContrasenaPipe,
     ManualtsComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent
     
   ],
   imports: [
