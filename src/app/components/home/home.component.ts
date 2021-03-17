@@ -7,10 +7,8 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class HomeComponent implements OnInit {
-  titulo: string;
-  constructor() {
-    this.titulo = "Bienvenido al manual de buenas prácticas";
-   }
+
+  constructor() { }
 
   ngOnInit(): void {
   }

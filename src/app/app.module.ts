@@ -6,8 +6,6 @@ import { AppComponent } from './app.component';
 //COMPONENTS
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
-import { HomeComponent } from './components/home/home.component';
-import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 import { InstalacionComponent } from './components/instalacion/instalacion.component';
 import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
 import { ProyectoHeroesComponent } from './components/proyecto-heroes/proyecto-heroes.component';
@@ -21,14 +19,13 @@ import { DomseguroPipe } from './pipes/domseguro.pipe';
 import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
 import { ContrasenaPipe } from './pipes/contrasena.pipe';
 import { ManualtsComponent } from './components/manualts/manualts.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    HomeComponent,
-    TarjetasComponent,
     InstalacionComponent,
     BuenasPracticasComponent,
     DomseguroPipe,
@@ -36,7 +33,8 @@ import { ManualtsComponent } from './components/manualts/manualts.component';
     PipeProyectComponent,
     CapitalizadoPipe,
     ContrasenaPipe,
-    ManualtsComponent
+    ManualtsComponent,
+    HomeComponent
     
   ],
   imports: [

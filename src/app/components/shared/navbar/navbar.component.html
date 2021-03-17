@@ -1,8 +1,27 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="assets/img/angular.png" alt="" width="35" height="33" class="d-inline-block align-top"> Manual de buenas prácticas </a>
+<div class="sidebar">
 
-        <button [routerLink]="['home']" type="button" class="btn btn-outline-danger">Regresar</button>
+    <div class="navbar-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/home']"> <img class="img-size" src="assets/menu-img/home.png"> Bienvendios </a>
     </div>
-</nav>
+
+    <div class="navbar-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/instalacion']"> <img class="img-size" src="assets/menu-img/install.png"> Instalación </a>
+    </div>
+
+
+    <div class="navbar-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/buenasPracticas']"><img class="img-size" src="assets/menu-img/good-pract.png"> Buenas Prácticas</a>
+    </div>
+
+    <div class="navbar-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/heroes']"><img class="img-size" src="assets/menu-img/app.png"> App</a>
+    </div>
+
+    <div class="navbar-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/pipes']"><img class="img-size" src="assets/menu-img/pipe.png"> Pipes</a>
+    </div>
+
+    <div class="navbar-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/manualts']"><img class="img-size" src="assets/menu-img/ts.png"> Manual TypeScript</a>
+    </div>
+</div>

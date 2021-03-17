@@ -8,11 +8,16 @@ import { ActivatedRoute, Router } from '@angular/router';
   ]
 })
 export class NavbarComponent implements OnInit {
+ 
 
   constructor(private activeRoute: ActivatedRoute,
-              private route: Router) { }
+              private route: Router,
+            ) { 
+         
+              }
 
   ngOnInit(): void {
   }
+
 
 }

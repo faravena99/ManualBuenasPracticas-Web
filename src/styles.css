@@ -1,33 +1,92 @@
-/* You can add global styles to this file, and also import other style files */
-
-body {
-    background-color: black;
-    color: white !important;
-    padding-bottom: 150px;
+.body {
+    background-color: #344B67;
 }
 
-.texto-centrado {
-    text-align: center;
-    font: comic-sans;
-}
-
-.img-logo {
-    width: 400px;
-    height: 400px;
-}
-
-hr {
-    color: whitesmoke;
-}
-
+h1,
+p,
+td,
 th,
-tr,
+tbody,
 thead,
-tbody {
-    color: white
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+strong {
+    color: white;
 }
 
-.img-centrado {
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font: inherit;
+}
+
+.sidebar a {
     display: block;
-    margin: auto;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.nav-link {
+    background-color: #5B8ECC;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #CFDFF2;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+.img-size {
+    width: 30px;
+    height: 30px;
+}
+
+.nav2-color {
+    background-color: #5B8ECC;
+    color: #ffff;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+.centrado {
+    text-align: center;
 }
