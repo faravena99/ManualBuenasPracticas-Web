@@ -11,6 +11,7 @@ import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-p
 import { ProyectoHeroesComponent } from './components/proyecto-heroes/proyecto-heroes.component';
 import { PipeProyectComponent } from './components/pipe-proyect/pipe-proyect.component';
 
+
 //RUTAS
 import { AppRoutingModule } from './app-routing.module';
 

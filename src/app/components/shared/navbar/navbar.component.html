@@ -1,27 +1,60 @@
-<div class="sidebar">
-
-    <div class="navbar-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['/home']"> <img class="img-size" src="assets/menu-img/home.png"> Bienvendios </a>
-    </div>
-
-    <div class="navbar-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['/instalacion']"> <img class="img-size" src="assets/menu-img/install.png"> Instalación </a>
-    </div>
+<nav class="navbar">
+    <ul class="navbar-nav">
+        <li class="logo">
+            <a href="#" class="nav-link">
+                <span class="link-text">Buenas Practicas</span>
+                <img src="assets/menu-img/angular.png" aria-hidden="true" focusab alt="">
+            </a>
 
 
-    <div class="navbar-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['/buenasPracticas']"><img class="img-size" src="assets/menu-img/good-pract.png"> Buenas Prácticas</a>
-    </div>
+        </li>
 
-    <div class="navbar-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['/heroes']"><img class="img-size" src="assets/menu-img/app.png"> App</a>
-    </div>
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link " [routerLink]="[ '/home']"> <img aria-hidden="true" src="assets/menu-img/home.png ">
+                <span class="link-text">
+                Bienvendios 
+            </span></a>
+        </li>
 
-    <div class="navbar-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['/pipes']"><img class="img-size" src="assets/menu-img/pipe.png"> Pipes</a>
-    </div>
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link " [routerLink]="[ '/instalacion'] "> <img aria-hidden="true" src="assets/menu-img/install.png ">
+                <span class="link-text">
+                    Instalación
+                </span>
+            </a>
+        </li>
 
-    <div class="navbar-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['/manualts']"><img class="img-size" src="assets/menu-img/ts.png"> Manual TypeScript</a>
-    </div>
-</div>
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link " [routerLink]="[ '/buenasPracticas'] "><img aria-hidden="true" src="assets/menu-img/good-pract.png ">
+                <span class="link-text">
+                    Buenas Prácticas
+                </span>
+            </a>
+        </li>
+
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link " [routerLink]="[ '/heroes'] "><img aria-hidden="true" src="assets/menu-img/app.png ">
+                <span class="link-text">
+                    App
+                </span>
+            </a>
+        </li>
+
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link " [routerLink]="[ '/pipes'] "><img aria-hidden="true" src="assets/menu-img/pipe.png ">
+                <span class="link-text">
+                    Pipes
+                </span>
+            </a>
+        </li>
+
+        <li class="nav-item" routerLinkActive="active">
+            <a class="nav-link " [routerLink]="[ '/manualts'] "><img aria-hidden="true" src="assets/menu-img/ts.png ">
+                <span class="link-text">
+                    Manual TypeScript
+                </span>
+            </a>
+        </li>
+
+    </ul>
+</nav>
