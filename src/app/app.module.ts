@@ -4,13 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 //COMPONENTS
-import { NavbarComponent } from './components/shared/navbar/navbar.component';
-import { FooterComponent } from './components/shared/footer/footer.component';
 import { InstalacionComponent } from './components/instalacion/instalacion.component';
 import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
 import { ProyectoHeroesComponent } from './components/proyecto-heroes/proyecto-heroes.component';
 import { PipeProyectComponent } from './components/pipe-proyect/pipe-proyect.component';
-
+import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 
 //RUTAS
 import { AppRoutingModule } from './app-routing.module';
@@ -21,13 +19,11 @@ import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
 import { ContrasenaPipe } from './pipes/contrasena.pipe';
 import { ManualtsComponent } from './components/manualts/manualts.component';
 import { HomeComponent } from './components/home/home.component';
-import { HeaderComponent } from './components/shared/header/header.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    FooterComponent,
     InstalacionComponent,
     BuenasPracticasComponent,
     DomseguroPipe,
@@ -37,7 +33,7 @@ import { HeaderComponent } from './components/shared/header/header.component';
     ContrasenaPipe,
     ManualtsComponent,
     HomeComponent,
-    HeaderComponent
+    SidebarComponent
     
   ],
   imports: [

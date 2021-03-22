@@ -1,0 +1,50 @@
+<div class="nav-side-menu">
+    <div class="brand"> Bienvenido a Angular</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+    <div class="menu-list">
+
+        <ul id="menu-content" class="menu-content collapse out">
+            <li routerLinkActive="active">
+                <a [routerLink]="['/home']">
+                    <i class="fa fa-home"></i> Bienvenidos
+                </a>
+            </li>
+
+            <li routerLinkActive="active">
+                <a [routerLink]="['/instalacion']"><i class="fa fa-book"></i> Instalación</a>
+            </li>
+
+
+            <li routerLinkActive="active">
+                <a [routerLink]="['/buenasPracticas']"><i class="fa fa-book"></i> Manual Buenas Prácticas</a>
+            </li>
+
+
+
+            <li routerLinkActive="active">
+                <a [routerLink]="['/manualts']"><i class="fa fa-book"></i> Manual TypeStript </a>
+            </li>
+
+
+
+            <li routerLinkActive="active">
+                <a [routerLink]="['/pipes']"><i class="fa fa-exchange"></i> Angular Pipes</a>
+            </li>
+
+
+
+            <li routerLinkActive="active">
+                <a [routerLink]="['/heroes']">
+                    <i class="fa fa-adn"></i> App Ejemplo
+                </a>
+            </li>
+
+            <li routerLinkActive="active">
+                <a [routerLink]="['']"><i class="fa fa-bar-chart"></i> Productos de la Empresa</a>
+            </li>
+
+
+        </ul>
+    </div>
+</div>
