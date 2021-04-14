@@ -1,50 +1,42 @@
-<div class="nav-side-menu">
-    <div class="brand"> Bienvenido a Angular</div>
-    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+<div class="page-container">
+    <div class="sidebar">
 
-    <div class="menu-list">
+        <div class="title">
+            <a href="https://www.mundocredito.cl/" routerLinkActive="selected"><img src="assets/img/Logomcp.png" class="icono"> MundoCredito </a>
+        </div>
 
-        <ul id="menu-content" class="menu-content collapse out">
-            <li routerLinkActive="active">
-                <a [routerLink]="['/home']">
-                    <i class="fa fa-home"></i> Bienvenidos
-                </a>
-            </li>
-
-            <li routerLinkActive="active">
-                <a [routerLink]="['/instalacion']"><i class="fa fa-book"></i> Instalación</a>
-            </li>
+        <div class="list-items">
+            <a routerLink="/home" routerLinkActive="selected" class="list-item">
+                <i class="icon ion-md-news lead mr-2"></i> News
+            </a>
 
 
-            <li routerLinkActive="active">
-                <a [routerLink]="['/buenasPracticas']"><i class="fa fa-book"></i> Manual Buenas Prácticas</a>
-            </li>
+            <a routerLink="/home" routerLinkActive="selected" class="list-item">
+                <i class="icon ion-md-home lead mr-2"></i> Bienvenido
+            </a>
+
+            <a routerLink="/instalacion" routerLinkActive="selected" class="list-item">
+                <i class="icon ion-logo-angular lead mr-2"></i> Manual Instalación
+            </a>
+
+            <a routerLink="/manualts" routerLinkActive="selected" class="list-item">
+                <i class="icon ion-md-book lead mr-2"></i> TypeScript
+            </a>
+
+            <a routerlink="/pipes" routerLinkActive="selected" class="list-item">
+                <i class="icon ion-md-information-circle lead mr-2"></i> Angular pipes
+            </a>
 
 
-
-            <li routerLinkActive="active">
-                <a [routerLink]="['/manualts']"><i class="fa fa-book"></i> Manual TypeStript </a>
-            </li>
-
-
-
-            <li routerLinkActive="active">
-                <a [routerLink]="['/pipes']"><i class="fa fa-exchange"></i> Angular Pipes</a>
-            </li>
+        </div>
 
 
 
-            <li routerLinkActive="active">
-                <a [routerLink]="['/heroes']">
-                    <i class="fa fa-adn"></i> App Ejemplo
-                </a>
-            </li>
 
-            <li routerLinkActive="active">
-                <a [routerLink]="['']"><i class="fa fa-bar-chart"></i> Productos de la Empresa</a>
-            </li>
-
-
-        </ul>
     </div>
+
+    <div class="page-content-container">
+        <router-outlet></router-outlet>
+    </div>
+
 </div>

@@ -1,46 +1,26 @@
-.centrado {
-    text-align: center;
-}
-
-:root {
-    font-size: 16px;
-    font-family: 'Open Sans';
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
-    --transition-speed: 600ms;
-}
-
+html,
 body {
-    color: #FFFFFF;
-    background-color: #101F48;
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans';
+    color: rgba(255, 255, 255, 0.85);
+    background: rgb(35, 42, 58);
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h6,
+p {
     margin: 0;
     padding: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-size: 24px;
 }
 
-.table {
-    color: #FFFFFF;
-}
-
-body::-webkit-scrollbar {
-    width: 0.45rem;
-}
-
-body::-webkit-scrollbar-track {
-    background: #1e1e24;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: #8EC1FF;
-}
-
-.contenedor {
-    width: 75%;
-    margin-left: 15rem;
-    height: 10rem;
-    border-radius: .25rem;
-    margin-block-end: auto;
-    float: right;
-    margin-top: 5rem;
+a {
+    text-decoration: none;
 }
