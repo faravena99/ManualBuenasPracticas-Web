@@ -6,22 +6,18 @@ import { InstalacionComponent } from './components/instalacion/instalacion.compo
 import { ManualtsComponent } from './components/manualts/manualts.component';
 import { PipeProyectComponent } from './components/pipe-proyect/pipe-proyect.component';
 import { ProyectoHeroesComponent } from './components/proyecto-heroes/proyecto-heroes.component';
-import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: SidebarComponent,
-    children: [
+  
       { path: 'home', component: HomeComponent },
       { path: 'instalacion', component: InstalacionComponent },
-      { path: 'buenasPracticas', component: BuenasPracticasComponent },
+      { path: 'buenasPracticas', component: BuenasPracticasComponent},
       { path: 'heroes', component: ProyectoHeroesComponent },
       { path: 'pipes', component: PipeProyectComponent },
       { path: 'manualts', component: ManualtsComponent },
-    ],
-  },
-];
+      { path: '',   redirectTo: '/home', pathMatch: 'full' },
+      { path: '**', component: HomeComponent },
+    ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { useHash: true })],

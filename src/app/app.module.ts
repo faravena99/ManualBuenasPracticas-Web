@@ -19,6 +19,9 @@ import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
 import { ContrasenaPipe } from './pipes/contrasena.pipe';
 import { ManualtsComponent } from './components/manualts/manualts.component';
 import { HomeComponent } from './components/home/home.component';
+import { Sidebar2Component } from './components/shared/sidebar2/sidebar2.component';
+
+import { SidebarModule } from 'ng-sidebar';
 
 
 @NgModule({
@@ -33,12 +36,14 @@ import { HomeComponent } from './components/home/home.component';
     ContrasenaPipe,
     ManualtsComponent,
     HomeComponent,
-    SidebarComponent
+    SidebarComponent,
+    Sidebar2Component
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SidebarModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

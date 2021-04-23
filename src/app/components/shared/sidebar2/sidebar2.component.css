@@ -1,25 +1,14 @@
-.page-container {
-    height: 100%;
-    display: flex;
-    background: rgb(35, 42, 58);
-}
-
-.title {
-    font-size: 25px;
-    font-family: 'Muli', sans-serif;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.icono {
+.logo {
+    display: block;
+    margin: auto;
     height: 50px;
     width: 50px;
 }
 
-.sidebar {
-    min-height: 100vh;
-    background: rgba(0, 0, 0, 0.2);
+.page-container {
+    height: 100%;
+    display: flex;
+    background: rgb(35, 42, 58);
 }
 
 .list-items {
@@ -35,6 +24,10 @@
     padding: 10px 20px;
     font-family: 'Muli', sans-serif;
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
 }
 
 .list-item:hover {
@@ -66,13 +59,4 @@
 .list-item.selected::before {
     opacity: 1;
     transform: scaleY(1);
-}
-
-.list-item i.icon {
-    margin-right: 12px;
-    font-size: 24px;
-}
-
-a {
-    text-decoration: none;
 }

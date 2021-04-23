@@ -1,201 +1,196 @@
-<div class="contenedor text-left">
-
-    <div class="container text-center">
-        <h1>
-            {{titulo}}
-        </h1>
-    </div>
+<div class="container text-center">
+    <h1>
+        {{titulo}}
+    </h1>
+</div>
 
 
-    <div class="container">
+<div class="container">
 
-        <h2><strong>Mantenerse al día</strong></h2>
+    <h2><strong>Mantenerse al día</strong></h2>
 
-        <h4>
-            Mantener sus proyectos de Angular actualizados
-        </h4>
+    <h4>
+        Mantener sus proyectos de Angular actualizados
+    </h4>
 
-        <p>
-            Al igual que Web y todo el ecosistema web, Angular está mejorando continuamente. Angular equilibra la mejora continua con un fuerte enfoque en la estabilidad y facilita las actualizaciones. Mantener su aplicación Angular actualizada le permite aprovechar
-            las nuevas funciones de vanguardia, así como optimizaciones y correcciones de errores. Comprob
-        </p>
+    <p>
+        Al igual que Web y todo el ecosistema web, Angular está mejorando continuamente. Angular equilibra la mejora continua con un fuerte enfoque en la estabilidad y facilita las actualizaciones. Mantener su aplicación Angular actualizada le permite aprovechar
+        las nuevas funciones de vanguardia, así como optimizaciones y correcciones de errores. Comprob
+    </p>
 
-        <h4>
-            Comprobar su versión de Angular <small> [ ng --version ]</small>
-        </h4>
-        <p>Para aquello a través de la consola, debe posicionarse a la carpeta del proyecto, luego colocal el commando mencionado</p>
+    <h4>
+        Comprobar su versión de Angular <small> [ ng --version ]</small>
+    </h4>
+    <p>Para aquello a través de la consola, debe posicionarse a la carpeta del proyecto, luego colocal el commando mencionado</p>
 
-        <img src="assets/img/bp-2.png" alt="en desarrollo">
+    <img src="assets/img/bp-2.png" alt="en desarrollo">
 
-        <h4>
-            Encontrar la versión actual de Angular
-        </h4>
+    <h4>
+        Encontrar la versión actual de Angular
+    </h4>
 
-        <p>
-            puede encontrar la versión más actual de Angular usando el comando CLI ng update. De forma predeterminada, ng update(sin argumentos adicionales) enumera las actualizaciones que están disponibles para usted.
-        </p>
-    </div>
+    <p>
+        puede encontrar la versión más actual de Angular usando el comando CLI ng update. De forma predeterminada, ng update(sin argumentos adicionales) enumera las actualizaciones que están disponibles para usted.
+    </p>
+</div>
 
-    <div class="container">
-        <h2><strong>Seguridad</strong></h2>
+<div class="container">
+    <h2><strong>Seguridad</strong></h2>
 
-        <h4>
-            Utilice el compilador de plantillas AOT
-        </h4>
-        <p>
-            El compilador de plantillas AOT evita toda una clase de vulnerabilidades llamadas inyección de plantillas y mejora en gran medida el rendimiento de la aplicación. El compilador de plantillas AOT es el compilador predeterminado utilizado por las aplicaciones
-            CLI de Angular, y debe usarlo en todas las implementaciones de producción.
-        </p>
+    <h4>
+        Utilice el compilador de plantillas AOT
+    </h4>
+    <p>
+        El compilador de plantillas AOT evita toda una clase de vulnerabilidades llamadas inyección de plantillas y mejora en gran medida el rendimiento de la aplicación. El compilador de plantillas AOT es el compilador predeterminado utilizado por las aplicaciones
+        CLI de Angular, y debe usarlo en todas las implementaciones de producción.
+    </p>
 
-        <h4>
-            Protección XSS del lado del servidor
-        </h4>
+    <h4>
+        Protección XSS del lado del servidor
+    </h4>
 
-        <p>
-            El HTML construido en el servidor es vulnerable a los ataques de inyección. Inyectar código de plantilla en una aplicación Angular es lo mismo que inyectar código ejecutable en la aplicación: le da al atacante control total sobre la aplicación. Para evitar
-            esto, utilice un lenguaje de plantillas que escape automáticamente los valores para evitar vulnerabilidades XSS en el servidor. No genere plantillas angulares en el lado del servidor utilizando un lenguaje de plantillas; Hacer esto conlleva
-            un alto riesgo de introducir vulnerabilidades de inyección de plantillas.
-        </p>
+    <p>
+        El HTML construido en el servidor es vulnerable a los ataques de inyección. Inyectar código de plantilla en una aplicación Angular es lo mismo que inyectar código ejecutable en la aplicación: le da al atacante control total sobre la aplicación. Para evitar
+        esto, utilice un lenguaje de plantillas que escape automáticamente los valores para evitar vulnerabilidades XSS en el servidor. No genere plantillas angulares en el lado del servidor utilizando un lenguaje de plantillas; Hacer esto conlleva un
+        alto riesgo de introducir vulnerabilidades de inyección de plantillas.
+    </p>
 
-        <h4>
-            Vulnerabilidades de nivel HTTP
-        </h4>
+    <h4>
+        Vulnerabilidades de nivel HTTP
+    </h4>
 
-        <p>
-            Angular tiene soporte integrado para ayudar a prevenir dos vulnerabilidades HTTP comunes, la falsificación de solicitudes entre sitios (CSRF o XSRF) y la inclusión de scripts entre sitios (XSSI). Ambos deben mitigarse principalmente en el lado del servidor,
-            pero Angular proporciona ayudantes para facilitar la integración en el lado del cliente.
-        </p>
-    </div>
+    <p>
+        Angular tiene soporte integrado para ayudar a prevenir dos vulnerabilidades HTTP comunes, la falsificación de solicitudes entre sitios (CSRF o XSRF) y la inclusión de scripts entre sitios (XSSI). Ambos deben mitigarse principalmente en el lado del servidor,
+        pero Angular proporciona ayudantes para facilitar la integración en el lado del cliente.
+    </p>
+</div>
 
 
-    <div class="container">
-        <h2>
-            <strong>
+<div class="container">
+    <h2>
+        <strong>
             Guía de estilo de codificación de Angular 
         </strong>
-        </h2>
+    </h2>
 
-        <strong>Estilo 01-01</strong>
-        <ul>
-            <li>
-                Definir una cosa, como servicio o componente por archivo
-            </li>
-            <li>
-                Considerar limitar los archivos a 400 líneas de código
-            </li>
-            <li>
-                ¿por qué?  Un componente por archivo hace que sea mucho más fácil de leer, mantener y evitar colisiones con los equipos de control de código fuente.
-            </li>
-        </ul>
-        <p>
-            La clave es hacer que el código sea más reutilizable, más fácil de leer y menos propenso a errores.
-        </p>
+    <strong>Estilo 01-01</strong>
+    <ul>
+        <li>
+            Definir una cosa, como servicio o componente por archivo
+        </li>
+        <li>
+            Considerar limitar los archivos a 400 líneas de código
+        </li>
+        <li>
+            ¿por qué?  Un componente por archivo hace que sea mucho más fácil de leer, mantener y evitar colisiones con los equipos de control de código fuente.
+        </li>
+    </ul>
+    <p>
+        La clave es hacer que el código sea más reutilizable, más fácil de leer y menos propenso a errores.
+    </p>
 
-        <h4>
-            Pequeñas funciones
-        </h4>
+    <h4>
+        Pequeñas funciones
+    </h4>
 
-        <strong>Estilo 01-02</strong>
-        <ul>
-            <li>
-                Definir funciones pequeñas
-            </li>
-            <li>
-                Considere limitar a no más de 75 líneas
-            </li>
-            <li>
-                ¿por qué?  Las funciones pequeñas son más fáciles de probar, leer, mantener y reutilizar, especialmente cuando hacen una cosa y tienen un propósito.
-            </li>
-        </ul>
+    <strong>Estilo 01-02</strong>
+    <ul>
+        <li>
+            Definir funciones pequeñas
+        </li>
+        <li>
+            Considere limitar a no más de 75 líneas
+        </li>
+        <li>
+            ¿por qué?  Las funciones pequeñas son más fáciles de probar, leer, mantener y reutilizar, especialmente cuando hacen una cosa y tienen un propósito.
+        </li>
+    </ul>
 
-        <h4>
-            Símbolos y nombres de archivos
-        </h4>
-        <strong>Estilo 01-03</strong>
-        <ul>
-            <li>
-                Utilizar nombres consistentes para todos los archivos con nombre de lo que representan
-            </li>
-            <li>
-                Haga coincidir del nombre del símbolo con el nombre del archivo
-            </li>
-            <li>
-                Añada el nombre de símbolo con el sufijo convencional (como Component, Directive, Module, Pipe, o Service) para una cosa de ese tipo.
-            </li>
-            <li>
-                Use el nombre de archivo del sufijo convencional como. component.ts, .directive.ts, .module.ts, .pipe.ts, o .service.ts) para un archivo de ese tipo.
-            </li>
+    <h4>
+        Símbolos y nombres de archivos
+    </h4>
+    <strong>Estilo 01-03</strong>
+    <ul>
+        <li>
+            Utilizar nombres consistentes para todos los archivos con nombre de lo que representan
+        </li>
+        <li>
+            Haga coincidir del nombre del símbolo con el nombre del archivo
+        </li>
+        <li>
+            Añada el nombre de símbolo con el sufijo convencional (como Component, Directive, Module, Pipe, o Service) para una cosa de ese tipo.
+        </li>
+        <li>
+            Use el nombre de archivo del sufijo convencional como. component.ts, .directive.ts, .module.ts, .pipe.ts, o .service.ts) para un archivo de ese tipo.
+        </li>
 
-            <li>
-                ¿Por qué? Las convenciones coherentes facilitan la identificación rápida y la referencia de activos de diferentes tipos.
-            </li>
+        <li>
+            ¿Por qué? Las convenciones coherentes facilitan la identificación rápida y la referencia de activos de diferentes tipos.
+        </li>
 
-        </ul>
+    </ul>
 
-        <h5>
-            Por ejemplo:
-        </h5>
-        <img src="assets/img/bp-4.png" alt="">
-    </div>
+    <h5>
+        Por ejemplo:
+    </h5>
+    <img src="assets/img/bp-4.png" alt="">
+</div>
 
-    <div class="container">
-        <h2>
-            <strong>
+<div class="container">
+    <h2>
+        <strong>
         Organiza tu código
     </strong>
-        </h2>
+    </h2>
 
-        <p>
-            Algunas formas de tener un archivo de código más legible y organizado son:
-        </p>
+    <p>
+        Algunas formas de tener un archivo de código más legible y organizado son:
+    </p>
 
-        <ul>
-            <li>
-                Lo más importante debe ir arriba.
-            </li>
-            <li>
-                Primero prioridades, después métodos.
-            </li>
-            <li>
-                El nombre correcto: las propiedades y métodos deberían usar el sistema de camel case (ej: getUserByName), al contrario, las clases (componentes, servicios, etc) deben usar upper camel case (ej: UserComponent).
-            </li>
-            <li>
-                Los componentes y servicios deben tener su respectivo sufijo: UserComponent, UserService.
-            </li>
-            <li>
-                Imports: los archivos externos van primero.
-            </li>
-        </ul>
-
-        <h4>
-            Procura ser claro al momento de codificar
-        </h4>
-        <p>
-            Cuando estés escribiendo, piensa que probablemente alguien más tendrá que leer tu código en algún momento. Todos hemos sufrido a la hora de leer código ajeno. Es por eso, por lo que lo ideal, es pensar en la persona que lo leerá, o incluso en ti mismo.
-        </p>
+    <ul>
         <li>
-            Tus comentarios deber ser claros y concisos, que se logre entender de la manera más fácil posible.
+            Lo más importante debe ir arriba.
         </li>
         <li>
-            Explica en tu mismo código, Código autodescriptivo, sin la necesidad de hacer comentarios para este.
-        </li>
-
-        <h4>
-            Otras buenas prácticas para tus Servicios
-        </h4>
-        <p>
-            Algunas buenas prácticas al momento de crear servicios son:
-        </p>
-        <li>
-            Crea tus servicios como inyectables
+            Primero prioridades, después métodos.
         </li>
         <li>
-            Utiliza tus servicios para recolectar tu data: es total responsabilidad de tus servicios recolectar la data necesaria, ya sea desde una API, localstorage o alguna estructura que hayamos creado nosotros mismos para poder desarrollarla.
+            El nombre correcto: las propiedades y métodos deberían usar el sistema de camel case (ej: getUserByName), al contrario, las clases (componentes, servicios, etc) deben usar upper camel case (ej: UserComponent).
         </li>
         <li>
-            Tus componentes nunca deben encargarse de pensar como traer data, estos solo deberían encargarse de llamar al servicio que contiene todo lo necesario, ¡¡ por esto, no deberías llamar a las API’s en tus componentes!!
+            Los componentes y servicios deben tener su respectivo sufijo: UserComponent, UserService.
         </li>
-    </div>
+        <li>
+            Imports: los archivos externos van primero.
+        </li>
+    </ul>
 
+    <h4>
+        Procura ser claro al momento de codificar
+    </h4>
+    <p>
+        Cuando estés escribiendo, piensa que probablemente alguien más tendrá que leer tu código en algún momento. Todos hemos sufrido a la hora de leer código ajeno. Es por eso, por lo que lo ideal, es pensar en la persona que lo leerá, o incluso en ti mismo.
+    </p>
+    <li>
+        Tus comentarios deber ser claros y concisos, que se logre entender de la manera más fácil posible.
+    </li>
+    <li>
+        Explica en tu mismo código, Código autodescriptivo, sin la necesidad de hacer comentarios para este.
+    </li>
 
+    <h4>
+        Otras buenas prácticas para tus Servicios
+    </h4>
+    <p>
+        Algunas buenas prácticas al momento de crear servicios son:
+    </p>
+    <li>
+        Crea tus servicios como inyectables
+    </li>
+    <li>
+        Utiliza tus servicios para recolectar tu data: es total responsabilidad de tus servicios recolectar la data necesaria, ya sea desde una API, localstorage o alguna estructura que hayamos creado nosotros mismos para poder desarrollarla.
+    </li>
+    <li>
+        Tus componentes nunca deben encargarse de pensar como traer data, estos solo deberían encargarse de llamar al servicio que contiene todo lo necesario, ¡¡ por esto, no deberías llamar a las API’s en tus componentes!!
+    </li>
 </div>
