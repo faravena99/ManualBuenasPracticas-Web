@@ -4,12 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 //COMPONENTS
+import { HomeComponent } from './components/home/home.component';
 import { InstalacionComponent } from './components/instalacion/instalacion.component';
 import { BuenasPracticasComponent } from './components/buenas-practicas/buenas-practicas.component';
-import { ProyectoHeroesComponent } from './components/proyecto-heroes/proyecto-heroes.component';
 import { PipeProyectComponent } from './components/pipe-proyect/pipe-proyect.component';
-import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
-
+import { ManualtsComponent } from './components/manualts/manualts.component';
 //RUTAS
 import { AppRoutingModule } from './app-routing.module';
 
@@ -17,11 +16,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { DomseguroPipe } from './pipes/domseguro.pipe';
 import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
 import { ContrasenaPipe } from './pipes/contrasena.pipe';
-import { ManualtsComponent } from './components/manualts/manualts.component';
-import { HomeComponent } from './components/home/home.component';
-import { Sidebar2Component } from './components/shared/sidebar2/sidebar2.component';
 
+//SIDEBAR
+import { Sidebar2Component } from './components/shared/sidebar2/sidebar2.component';
 import { SidebarModule } from 'ng-sidebar';
+import { NewsComponent } from './components/news/news.component';
 
 
 @NgModule({
@@ -30,14 +29,13 @@ import { SidebarModule } from 'ng-sidebar';
     InstalacionComponent,
     BuenasPracticasComponent,
     DomseguroPipe,
-    ProyectoHeroesComponent,
     PipeProyectComponent,
     CapitalizadoPipe,
     ContrasenaPipe,
     ManualtsComponent,
     HomeComponent,
-    SidebarComponent,
-    Sidebar2Component
+    Sidebar2Component,
+    NewsComponent
     
   ],
   imports: [

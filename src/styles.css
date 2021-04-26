@@ -9,7 +9,7 @@ li,
 ul,
 th,
 td {
-    margin: 0;
+    margin: 1;
     padding: 0;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -32,6 +32,8 @@ body {
     width: 90%;
     height: 50%;
     position: absolute;
+    display: inline-block;
     top: 15%;
     left: 10%;
+    margin-bottom: 10%;
 }
