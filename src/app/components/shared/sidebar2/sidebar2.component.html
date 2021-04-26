@@ -1,50 +1,53 @@
-<ng-sidebar-container>
+<div class="container">
+    <div class="row">
+        <div class="col-m-4">
+            <ng-sidebar-container>
 
-    <!-- A sidebar -->
-    <ng-sidebar [(opened)]="opened" position="left">
-        <div class="text-justify mt-2 ml-4">
-
-            <div class="list-items">
-
-                <a routerLink="/home" routerLinkActive="selected" class="list-item">
-                    <i class="icon ion-md-home lead mr-2"></i> Bienvenido
-                </a>
-
-                <a routerLink="/instalacion" routerLinkActive="selected" class="list-item">
-                    <i class="icon ion-logo-angular lead mr-2"></i> Manual Instalación
-                </a>
-
-                <a routerLink="/manualts" routerLinkActive="selected" class="list-item">
-                    <i class="icon ion-md-book lead mr-2"></i> TypeScript
-                </a>
-
-                <a routerLink="/pipes" routerLinkActive="selected" class="list-item">
-                    <i class="icon ion-md-information-circle lead mr-2"></i> Angular pipes
-                </a>
-            </div>
+                <ng-sidebar [(opened)]="opened" position="left" class="sidebar">
 
 
+                    <div class="list-items">
+
+                        <a routerLink="/home" routerLinkActive="selected" class="list-item">
+                            <i class="icon ion-md-home lead mr-2"></i> Bienvenido
+                        </a>
+
+                        <a routerLink="/instalacion" routerLinkActive="selected" class="list-item">
+                            <i class="icon ion-logo-angular lead mr-2"></i> Manual Instalación
+                        </a>
+
+                        <a routerLink="/manualts" routerLinkActive="selected" class="list-item">
+                            <i class="icon ion-md-book lead mr-2"></i> TypeScript
+                        </a>
+
+                        <a routerLink="/pipes" routerLinkActive="selected" class="list-item">
+                            <i class="icon ion-md-information-circle lead mr-2"></i> Angular pipes
+                        </a>
+                    </div>
 
 
+
+                </ng-sidebar>
+
+                <div ng-sidebar-content class="fixed-top">
+
+
+                    <nav class="navbar navbar-dark bg-dark navar-fixed">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" (click)="toggleSidebar()" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                            <img src="assets/img/Logomcp.png" href="https://www.mundocredito.cl/" class="logo">
+                        </div>
+                    </nav>
+
+
+                </div>
+
+            </ng-sidebar-container>
         </div>
-
-
-    </ng-sidebar>
-
-    <!-- Page content -->
-    <div ng-sidebar-content>
-
-
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" (click)="toggleSidebar()" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <img src="assets/img/Logomcp.png" class="logo">
-            </div>
-        </nav>
-
-
     </div>
-
-</ng-sidebar-container>
+    <div class="col-m-8" id="main">
+        <router-outlet></router-outlet>
+    </div>
+</div>

@@ -11,6 +11,8 @@ export class Sidebar2Component implements OnInit {
  
   public toggleSidebar() {
     this.opened = !this.opened;
+
+   
   }
   constructor() { }
 

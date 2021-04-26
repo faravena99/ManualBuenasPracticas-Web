@@ -1,63 +1,68 @@
-<div class="container text-center">
-    <h1>{{titulo}}</h1>
-    <hr>
+<div class="contenedor">
+
+
+    <div class="container text-center">
+        <h1>{{titulo}}</h1>
+        <hr>
+    </div>
+
+
+    <ul>
+        <li>Paso 1: <img src="assets/img/node.png" alt="image not found"> <br>
+            <p>
+                Instalar NodeJS en su ultima versión, para eso entraremos a su web oficial y descargaremos el instalador más actualizado Nosotros en este momento estamos utilizando la versión 10.8.0 Luego instalar en disco local C: .</p>
+            <br>
+            <iframe [src]="nodeUrl | domseguro" width="400" height="300"></iframe>
+        </li>
+        <br> <br>
+        <li>
+            Paso 2: <img src="assets/img/ts.png" alt="image not found"> <br>
+            <p>
+                Instalar la última versión de TypeScript, para eso abrir CMD o gitBach y pegar el comando.
+            </p>
+            <br>
+            <iframe [src]="tsUrl | domseguro" width="400" height="300"></iframe>
+            <div class="mt-3">
+                <img src="assets/img/typescript.png" alt="image not found">
+            </div>
+        </li>
+        <br>
+        <br>
+        <li>
+            Paso 3: <img src="assets/img/angular-mini.png" alt="image not found"> <br>
+            <p>
+                Instalar Angular-CLI en su útlima versión
+            </p>
+            <br>
+            <iframe [src]="angularUrl | domseguro" width="700" height="300"></iframe>
+            <div class="mt-3">
+                <img src="assets/img/angular-cli.png" alt="image not found">
+            </div>
+        </li>
+        <br><br>
+        <li>
+            Paso 4: <img src="assets/img/vsCode.png" alt="image not found"> <br>
+            <p>
+                Instalar Visual Studio Code
+
+            </p>
+
+        </li>
+        <br><br>
+        <li>
+            Paso 5: <img src="assets/img/chrome.png" alt="image not found">
+            <p>
+                Instalar Google Chrome, es sumamente importante tener este navegador, ya que tiene una de las mejores consolas de navegador actualmente. Para acceder a ella una vez ya este instalado Google Chrome presione la tecla F12 para acceder a ella.
+            </p>
+            <div class="mt-3">
+                <img src="assets/img/consola.png" alt="image not found">
+            </div>
+
+            <p class="mt-3">
+                Esto debería ser suficiente para comenzar.
+            </p>
+        </li>
+    </ul>
+    <br><br><br>
+
 </div>
-
-
-<ul>
-    <li>Paso 1: <img src="assets/img/node.png" alt="image not found"> <br>
-        <p>
-            Instalar NodeJS en su ultima versión, para eso entraremos a su web oficial y descargaremos el instalador más actualizado Nosotros en este momento estamos utilizando la versión 10.8.0 Luego instalar en disco local C: .</p>
-        <br>
-        <iframe [src]="nodeUrl | domseguro" width="400" height="300"></iframe>
-    </li>
-    <br> <br>
-    <li>
-        Paso 2: <img src="assets/img/ts.png" alt="image not found"> <br>
-        <p>
-            Instalar la última versión de TypeScript, para eso abrir CMD o gitBach y pegar el comando.
-        </p>
-        <br>
-        <iframe [src]="tsUrl | domseguro" width="400" height="300"></iframe>
-        <div class="mt-3">
-            <img src="assets/img/typescript.png" alt="image not found">
-        </div>
-    </li>
-    <br>
-    <br>
-    <li>
-        Paso 3: <img src="assets/img/angular-mini.png" alt="image not found"> <br>
-        <p>
-            Instalar Angular-CLI en su útlima versión
-        </p>
-        <br>
-        <iframe [src]="angularUrl | domseguro" width="700" height="300"></iframe>
-        <div class="mt-3">
-            <img src="assets/img/angular-cli.png" alt="image not found">
-        </div>
-    </li>
-    <br><br>
-    <li>
-        Paso 4: <img src="assets/img/vsCode.png" alt="image not found"> <br>
-        <p>
-            Instalar Visual Studio Code
-
-        </p>
-
-    </li>
-    <br><br>
-    <li>
-        Paso 5: <img src="assets/img/chrome.png" alt="image not found">
-        <p>
-            Instalar Google Chrome, es sumamente importante tener este navegador, ya que tiene una de las mejores consolas de navegador actualmente. Para acceder a ella una vez ya este instalado Google Chrome presione la tecla F12 para acceder a ella.
-        </p>
-        <div class="mt-3">
-            <img src="assets/img/consola.png" alt="image not found">
-        </div>
-
-        <p class="mt-3">
-            Esto debería ser suficiente para comenzar.
-        </p>
-    </li>
-</ul>
-<br><br><br>
